@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+
+}
+
+body{
+
+}
+
+*{
+
+    font-family: 'Poppins';
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container h1{
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.container button{
+    padding: 4px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0 solid black;
+    background: rgb(216, 243, 185);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+img{
+    height: 200px;
+    border-radius: 20px;
+    display:none ;
+    transition: 1s ease-in-out;
+}
+
+
+.show{
+    display: block;
+    transition:all .5s ease-in-out;
+}
+
+.zoom{
+    transition:all .5s ease-in-out;
+    transform: scale(1.2);
+}
+
+
+.parent { 
+    position: absolute;
+    width: 350px; 
+    height: 200px; 
+    left: 50%; 
+    top: 50%; 
+    background-color: #333; 
+    background-image: none;
+    transform: translate(-50%);
+    border-radius: 15px;
+
+} 
+
+.container .menu{
+    font-weight: 800;
+    background-image: linear-gradient(to right, rgb(225, 233, 235) , rgb(243, 249, 252));
+    border-radius: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container div label{
+    background-color: rgb(226, 245, 142);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 2px;
+}
